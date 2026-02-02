@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zen & Iki | Katsuobushi Shaving Experience at the Shrine</title>
+  <meta name="description" content="Katsuobushi shaving experience at a historic shrine near Osaka Castle. Zen Shaving &amp; Umami Feast—a refined moment to tune body and mind. Book in Morinomiya, Osaka." />
+  <!-- OGP: 本番では og:url と og:image を絶対URLに差し替えること（例: https://yoursite.com/ , https://yoursite.com/assets/hero1.png） -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Zen &amp; Iki | Katsuobushi Shaving Experience at the Shrine" />
+  <meta property="og:description" content="Katsuobushi shaving experience at a historic shrine near Osaka Castle. Zen Shaving &amp; Umami Feast—a refined moment to tune body and mind." />
+  <meta property="og:image" content="assets/hero1.png" />
+  <meta property="og:url" content="" />
+  <meta property="og:image:width" content="1920" />
+  <meta property="og:image:height" content="1080" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Zen &amp; Iki" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zen &amp; Iki | Katsuobushi Shaving Experience at the Shrine" />
+  <meta name="twitter:description" content="Katsuobushi shaving experience at a historic shrine near Osaka Castle. Zen Shaving &amp; Umami Feast—a refined moment to tune body and mind." />
+  <meta name="twitter:image" content="assets/hero1.png" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preload" as="image" href="assets/hero1.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <noscript>
+    <style>#loader{display:none !important;} body.loading{overflow:auto !important;}</style>
+  </noscript>
+  <!-- ローディング画面（JS失敗時は5秒後にCSSでフェードアウト） -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <img src="assets/logo-zen-iki.png" alt="Zen & Iki" class="loader-brand" width="280" height="105" data-i18n-alt="loaderLogoAlt" />
+    </div>
+  </div>
+
+  <!-- 左側セクションインジケーター -->
+  <nav class="section-indicators" aria-label="Section navigation">
+    <a href="#hero" class="indicator active" data-section="hero" data-i18n-title="indicatorTitleTop"><span class="dot"></span><span class="label" data-i18n="navTop">Top</span></a>
+    <a href="#concept" class="indicator" data-section="concept" data-i18n-title="indicatorTitleConcept"><span class="dot"></span><span class="label" data-i18n="navConcept">Concept</span></a>
+    <a href="#experience" class="indicator" data-section="experience" data-i18n-title="indicatorTitleExp"><span class="dot"></span><span class="label" data-i18n="navExperience">Experience</span></a>
+    <a href="#flow" class="indicator" data-section="flow" data-i18n-title="indicatorTitleFlow"><span class="dot"></span><span class="label" data-i18n="navFlow">Flow</span></a>
+    <a href="#information" class="indicator" data-section="information" data-i18n-title="indicatorTitleAccess"><span class="dot"></span><span class="label" data-i18n="navAccess">Access</span></a>
+    <a href="#reserve" class="indicator" data-section="reserve" data-i18n-title="indicatorTitleReserve"><span class="dot"></span><span class="label" data-i18n="navReserve">Reserve</span></a>
+  </nav>
+
+  <!-- 言語切替プルタブ -->
+  <div class="lang-switcher" aria-label="Language">
+    <button type="button" class="lang-switcher-tab" aria-expanded="false" aria-controls="lang-panel" id="lang-tab"><span class="lang-tab-text">EN</span></button>
+    <div id="lang-panel" class="lang-switcher-panel" role="listbox" aria-labelledby="lang-tab" hidden>
+      <button type="button" class="lang-option" role="option" data-lang="en" aria-selected="true">English</button>
+      <button type="button" class="lang-option" role="option" data-lang="ja" aria-selected="false">日本語</button>
+      <button type="button" class="lang-option" role="option" data-lang="zh" aria-selected="false">中文</button>
+    </div>
+  </div>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="logo logo-img">
+        <img src="assets/logo-zen-iki.png" alt="Zen & Iki" width="140" height="40" data-i18n-alt="loaderLogoAlt" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#concept" data-i18n="navConcept">Concept</a></li>
+        <li><a href="#experience" data-i18n="navExperience">Experience</a></li>
+        <li><a href="#flow" data-i18n="navFlow">Flow</a></li>
+        <li><a href="#information" data-i18n="navAccess">Access</a></li>
+        <li><a href="#reserve" data-i18n="navReserve">Reserve</a></li>
+        <li><a href="https://www.instagram.com/100sauce.fujita?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank" rel="noopener noreferrer" class="btn-sns" aria-label="Instagram" data-i18n-aria-label="ariaInstagram">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@user2796113026210" target="_blank" rel="noopener noreferrer" class="btn-sns" aria-label="TikTok" data-i18n-aria-label="ariaTikTok">TikTok</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Menu" type="button" data-i18n-aria-label="ariaMenu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- モバイルメニュー -->
+  <div class="mobile-menu">
+    <ul class="mobile-nav-links">
+      <li><a href="#concept" data-i18n="navConcept">Concept</a></li>
+      <li><a href="#experience" data-i18n="navExperience">Experience</a></li>
+      <li><a href="#flow" data-i18n="navFlow">Flow</a></li>
+      <li><a href="#information" data-i18n="navAccess">Access</a></li>
+      <li><a href="#reserve" data-i18n="navReserve">Reserve</a></li>
+      <li><a href="https://www.instagram.com/100sauce.fujita?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank" rel="noopener noreferrer" class="btn-sns">Instagram</a></li>
+      <li><a href="https://www.tiktok.com/@user2796113026210" target="_blank" rel="noopener noreferrer" class="btn-sns">TikTok</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- ヒーロー（スライダー） LCP用に1枚目はimg+preload、インラインスタイル廃止 -->
+    <section id="hero" class="section hero">
+      <div class="hero-slider">
+        <div class="slide active">
+          <img src="assets/hero1.png" alt="Katsuobushi shaving experience at the shrine" width="1920" height="1080" fetchpriority="high" />
+        </div>
+        <div class="slide">
+          <img src="assets/hero2.png" alt="Shrine and traditional atmosphere" width="1920" height="1080" loading="lazy" />
+        </div>
+        <div class="slide">
+          <img src="assets/hero3.png" alt="Fresh katsuobushi and dashi" width="1920" height="1080" loading="lazy" />
+        </div>
+        <div class="slide">
+          <img src="assets/hero4.png" alt="Zen and Iki experience" width="1920" height="1080" loading="lazy" />
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-brand anim-item">
+          <img src="assets/logo-zen-iki.png" alt="禅と粋 zen&amp;iki" width="320" height="120" />
+        </div>
+        <p class="hero-tagline anim-item" data-i18n="heroTagline">Zen Shaving & Umami Feast at the Shrine</p>
+        <h1 class="hero-title anim-item" data-i18n="heroTitle">Fresh-shaved aroma and shrine stillness.<br />The ultimate "umami" experience that tunes body and mind.</h1>
+        <p class="hero-subtitle anim-item" data-i18n="heroSubtitle">At a historic shrine at the foot of Osaka Castle. A refined moment to sharpen the senses.</p>
+        <a href="#concept" class="btn btn-hero anim-item" data-i18n="heroCta">Learn more</a>
+      </div>
+      <div class="slider-nav">
+        <button class="slider-dot active" data-index="0"></button>
+        <button class="slider-dot" data-index="1"></button>
+        <button class="slider-dot" data-index="2"></button>
+        <button class="slider-dot" data-index="3"></button>
+      </div>
+      <div class="scroll-hint">
+        <span class="scroll-text" data-i18n="scrollHint">Scroll</span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- Concept コンセプト・想い -->
+    <section id="concept" class="section section-light">
+      <div class="parallax-bg" data-speed="0.3" style="background-image: url('assets/hero2.png')"></div>
+      <div class="container two-col">
+        <div class="text-block">
+          <p class="section-label anim-item" data-i18n="conceptLabel">Concept</p>
+          <h2 class="section-title anim-item" data-i18n="conceptTitle">かつての朝、日本の家庭に響いた鰹節を削る音。</h2>
+          <div class="title-line anim-item"></div>
+          <p class="body-text anim-item" data-i18n="conceptP1">
+            効率優先の今だからこそ、あえて「手間をかける贅沢」を楽しんでほしい。
+          </p>
+          <p class="body-text anim-item" data-i18n="conceptP2">
+            舞台は大阪城そばの静かな神社。宮司と食のプロが贈るのは、削りたての香りに没頭するひとときです。深く息を吸い、五感で旨味を味わう。心身がスッと整う、最高に「粋」な時間を過ごしませんか。
+          </p>
+        </div>
+        <div class="image-block anim-item">
+          <div class="img-frame">
+            <img src="assets/hero1.png" alt="Honkarebushi and shaved flakes" loading="lazy" data-i18n-alt="conceptImgAlt" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Experience 3つのこだわり -->
+    <section id="experience" class="section section-beige">
+      <div class="container narrow">
+        <p class="section-label center anim-item" data-i18n="expLabel">The Experience</p>
+        <h2 class="section-title center anim-item" data-i18n="expTitle">Four commitments</h2>
+        <div class="title-line center anim-item"></div>
+        <div class="cards">
+          <article class="card anim-item" data-delay="0">
+            <div class="card-number">01</div>
+            <h3 class="card-title" data-i18n="exp01Title">Non-everyday / Shrine</h3>
+            <p class="card-text" data-i18n="exp01Text">Enjoy shaving as exercise in the non-everyday space of a shrine. A moment away from routine that unwinds body and mind.</p>
+          </article>
+          <article class="card anim-item" data-delay="100">
+            <div class="card-number">02</div>
+            <h3 class="card-title" data-i18n="exp02Title">Dashi & stillness / Essence</h3>
+            <p class="card-text" data-i18n="exp02Text">Dashi and katsuobushi—the heart of Japanese cuisine. Taste their simple yet profound depth in the quiet of the shrine.</p>
+          </article>
+          <article class="card anim-item" data-delay="200">
+            <div class="card-number">03</div>
+            <h3 class="card-title" data-i18n="exp03Title">Okaka rice & shichimi / Taste</h3>
+            <p class="card-text" data-i18n="exp03Text">Experience okaka rice and Japanese aromatic shichimi pepper. The joy of eating.</p>
+          </article>
+          <article class="card anim-item" data-delay="300">
+            <div class="card-number">04</div>
+            <h3 class="card-title" data-i18n="exp04Title">One intense hour / One & Only</h3>
+            <p class="card-text" data-i18n="exp04Text">A single hour that combines dining and experience. A one-of-a-kind event where elegance and fun meet.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flow 体験の流れ -->
+    <section id="flow" class="section section-light">
+      <div class="container">
+        <p class="section-label center anim-item" data-i18n="flowLabel">Flow</p>
+        <h2 class="section-title center anim-item" data-i18n="flowTitle">Experience flow</h2>
+        <div class="title-line center anim-item"></div>
+        <div class="flow-steps">
+          <article class="flow-step anim-item" data-delay="0">
+            <span class="flow-num">1</span>
+            <h3 class="flow-title" data-i18n="flow1Title">Welcome & Story</h3>
+            <p class="flow-desc" data-i18n="flow1Desc">Greeted at the front of the shrine. Learn the history of katsuobushi and the roots of "yakumi" that soothe body and mind.</p>
+          </article>
+          <article class="flow-step anim-item" data-delay="100">
+            <span class="flow-num">2</span>
+            <h3 class="flow-title" data-i18n="flow2Title">Kezuri Exercise</h3>
+            <p class="flow-desc" data-i18n="flow2Desc">Shave the finest honkarebushi with a traditional shaver. A pleasant harmony of meditation and rhythm.</p>
+          </article>
+          <article class="flow-step anim-item" data-delay="200">
+            <span class="flow-num">3</span>
+            <h3 class="flow-title" data-i18n="flow3Title">The Feast</h3>
+            <p class="flow-desc" data-i18n="flow3Desc">Fresh-shaved flakes, freshly cooked rice, and golden dashi carefully strained by a pro. Find your own "best taste."</p>
+          </article>
+          <article class="flow-step anim-item" data-delay="300">
+            <span class="flow-num">4</span>
+            <h3 class="flow-title" data-i18n="flow4Title">Closing & Souvenir</h3>
+            <p class="flow-desc" data-i18n="flow4Desc">Close with sacred sake. Your shaved katsuobushi goes home in a special pouch as a souvenir.</p>
+          </article>
+        </div>
+
+        <!-- 体験の流れ 横スクロールスライドショー -->
+        <div class="flow-slideshow-wrap anim-item">
+          <div class="flow-slideshow" aria-label="Experience scenes" data-i18n-aria-label="flowSlideshowAria">
+            <div class="flow-slideshow-track">
+              <div class="flow-slide"><img src="assets/flow-slide-1.png" alt="Shrine room and altar" loading="lazy" data-i18n-alt="flowSlideAlt1" /></div>
+              <div class="flow-slide"><img src="assets/flow-slide-2.png" alt="Katsuobushi shaving experience" loading="lazy" data-i18n-alt="flowSlideAlt2" /></div>
+              <div class="flow-slide"><img src="assets/flow-slide-3.png" alt="Fresh flakes with rice and dashi" loading="lazy" data-i18n-alt="flowSlideAlt3" /></div>
+              <div class="flow-slide"><img src="assets/flow-slide-4.png" alt="Making dashi" loading="lazy" data-i18n-alt="flowSlideAlt4" /></div>
+              <div class="flow-slide"><img src="assets/flow-slide-5.png" alt="Fresh-shaved katsuobushi" loading="lazy" data-i18n-alt="flowSlideAlt5" /></div>
+              <div class="flow-slide"><img src="assets/flow-slide-6.png" alt="Honkarebushi and flakes" loading="lazy" data-i18n-alt="flowSlideAlt6" /></div>
+              <!-- 無限ループ用の複製 -->
+              <div class="flow-slide"><img src="assets/flow-slide-1.png" alt="Shrine room and altar" loading="lazy" data-i18n-alt="flowSlideAlt1" /></div>
+              <div class="flow-slide"><img src="assets/flow-slide-2.png" alt="Katsuobushi shaving experience" loading="lazy" data-i18n-alt="flowSlideAlt2" /></div>
+              <div class="flow-slide"><img src="assets/flow-slide-3.png" alt="Fresh flakes with rice and dashi" loading="lazy" data-i18n-alt="flowSlideAlt3" /></div>
+              <div class="flow-slide"><img src="assets/flow-slide-4.png" alt="Making dashi" loading="lazy" data-i18n-alt="flowSlideAlt4" /></div>
+              <div class="flow-slide"><img src="assets/flow-slide-5.png" alt="Fresh-shaved katsuobushi" loading="lazy" data-i18n-alt="flowSlideAlt5" /></div>
+              <div class="flow-slide"><img src="assets/flow-slide-6.png" alt="Honkarebushi and flakes" loading="lazy" data-i18n-alt="flowSlideAlt6" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Access アクセス -->
+    <section id="information" class="section section-beige">
+      <div class="container narrow">
+        <p class="section-label center anim-item" data-i18n="accessLabel">Access</p>
+        <h2 class="section-title center anim-item" data-i18n="accessTitle">Access</h2>
+        <div class="title-line center anim-item"></div>
+
+        <div class="access-venue anim-item">
+          <p class="access-name" data-i18n="accessName">Negai no Miya (Wish Shrine)</p>
+          <p class="access-address" data-i18n="accessAddress">1-10-7 Morinomiya Chuo, Chuo-ku, Osaka 540-0003</p>
+        </div>
+
+        <div class="access-directions anim-item">
+          <p class="access-lead" data-i18n="accessLead">JR: use "South Exit." Subway: use "Exit 6" for the shortest route.</p>
+
+          <div class="access-route">
+            <h3 class="access-route-title" data-i18n="accessRoute1Title">From JR Osaka Loop Line (about 3 min on foot)</h3>
+            <ol class="access-steps">
+              <li data-i18n="accessRoute1_1">Exit through "South Exit" ticket gate</li>
+              <li data-i18n="accessRoute1_2">Head south (toward Tamatsukuri)</li>
+              <li data-i18n="accessRoute1_3">About 3 min on foot</li>
+            </ol>
+            <p class="access-tip" data-i18n="accessRoute1Tip">From North Exit it's a detour; move to the south gate inside the station for a smoother route.</p>
+          </div>
+
+          <div class="access-route">
+            <h3 class="access-route-title" data-i18n="accessRoute2Title">From Osaka Metro (about 5 min on foot)</h3>
+            <ol class="access-steps">
+              <li data-i18n="accessRoute2_1">Aim for "Exit 6" on Chuo Line or Nagahori Tsurumi-ryokuchi Line</li>
+              <li data-i18n="accessRoute2_2">Once above ground, head south</li>
+              <li data-i18n="accessRoute2_3">About 5 min on foot</li>
+            </ol>
+          </div>
+
+          <p class="access-tip access-tip-block" data-i18n="accessRouteTipBlock">If you exit from JR North (Osaka Castle Park side), walk along the west side of the station and head south along the JR tracks—it's easy to find.</p>
+        </div>
+
+        <div class="access-map-btn-wrap anim-item">
+          <a href="https://www.google.com/maps/search/?api=1&query=願いの宮+大阪市中央区森ノ宮中央1丁目10-7" target="_blank" rel="noopener noreferrer" class="btn btn-map">
+            <span class="btn-map-icon" aria-hidden="true">📍</span>
+            <span data-i18n="btnMap">Open in Google Maps</span>
+          </a>
+          <p class="access-map-note" data-i18n="mapNote">Tapping opens the Google Maps app or browser to show the venue.</p>
+        </div>
+
+        <div class="overview-wrap anim-item">
+          <h3 class="overview-title" data-i18n="overviewTitle">Overview</h3>
+          <table class="info-table overview-table">
+            <tbody>
+              <tr>
+                <th data-i18n="overviewDuration">Duration</th>
+                <td data-i18n="overviewDurationVal">About 60 min</td>
+              </tr>
+              <tr>
+                <th data-i18n="overviewIncludes">What's included</th>
+                <td data-i18n="overviewIncludesVal">Katsuobushi shaving, rice, dashi, 2 kinds of soy sauce, premium shichimi, sacred sake, souvenir (dashi pouch & recipe card)</td>
+              </tr>
+              <tr>
+                <th data-i18n="overviewAttire">Attire</th>
+                <td data-i18n="overviewAttireVal">Casual</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reserve 予約（Host + CTA） -->
+    <section id="reserve" class="section section-dark tall">
+      <div class="parallax-bg dark" data-speed="0.25" style="background-image: url('assets/hero4.png')"></div>
+      <div class="container narrow reserve-content">
+        <!-- Host Profile -->
+        <div class="host-block anim-item">
+          <p class="section-label center light" data-i18n="hostLabel">Host Profile</p>
+          <h2 class="section-title center light" data-i18n="hostTitle">Head priest × Traditional cuisine specialist</h2>
+          <div class="title-line center light"></div>
+          <p class="body-text center light" data-i18n="hostText">
+            A head priest who wishes "to make the shrine an open place where people gather with smiles." And I, who wish "for people to know the essence of Japanese food." We navigate this experience with heart—honoring tradition while keeping the playful spirit of "Iki."
+          </p>
+        </div>
+        <div class="center anim-item reserve-cta">
+          <a href="#contact" class="btn btn-primary btn-large" data-i18n="reserveCta">Book the experience</a>
+          <p class="reserve-note" data-i18n="reserveNote">The ultimate "umami" experience that tunes body and mind.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="#hero" class="footer-logo-img">
+        <img src="assets/logo-zen-iki.png" alt="Zen & Iki" width="160" height="48" data-i18n-alt="loaderLogoAlt" />
+      </a>
+      <p class="footer-copy" data-i18n="footerCopy">Katsuobushi shaving experience at the shrine — Morinomiya, Osaka</p>
+      <div class="footer-links">
+        <a href="#hero" data-i18n="navTop">Top</a>
+        <a href="#concept" data-i18n="navConcept">Concept</a>
+        <a href="#experience" data-i18n="navExperience">Experience</a>
+        <a href="#flow" data-i18n="navFlow">Flow</a>
+        <a href="#information" data-i18n="navAccess">Access</a>
+        <a href="#reserve" data-i18n="navReserve">Reserve</a>
+        <a href="https://www.instagram.com/100sauce.fujita?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank" rel="noopener noreferrer" class="footer-sns" aria-label="Instagram">
+          <svg class="icon-sns" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.tiktok.com/@user2796113026210" target="_blank" rel="noopener noreferrer" class="footer-sns" aria-label="TikTok">
+          <svg class="icon-sns" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+          TikTok
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
