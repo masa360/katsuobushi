@@ -177,6 +177,28 @@
   const header = document.querySelector('.site-header');
   const indicators = document.querySelector('.section-indicators');
 
+  // ===== Sticky CTA: ヒーローを過ぎたら表示、予約セクションでは非表示 =====
+  const stickyCta = document.getElementById('sticky-cta');
+  const heroSection = document.getElementById('hero');
+  const reserveSection = document.getElementById('reserve');
+
+  function updateStickyCta() {
+    if (!stickyCta || !heroSection || !reserveSection) return;
+    const scrollY = window.scrollY;
+    const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+    const reserveTop = reserveSection.offsetTop;
+    const viewportMid = scrollY + window.innerHeight * 0.4;
+    const pastHero = scrollY > heroBottom - 80;
+    const inReserve = viewportMid >= reserveTop;
+    if (pastHero && !inReserve) {
+      stickyCta.classList.add('visible');
+      stickyCta.setAttribute('aria-hidden', 'false');
+    } else {
+      stickyCta.classList.remove('visible');
+      stickyCta.setAttribute('aria-hidden', 'true');
+    }
+  }
+
   function updateHeaderState() {
     if (window.scrollY > 100) {
       header.classList.add('scrolled');
@@ -288,6 +310,7 @@
     if (!ticking) {
       requestAnimationFrame(function () {
         updateHeaderState();
+        updateStickyCta();
         updateIndicators();
         updateParallax();
         checkAnimations();
@@ -301,6 +324,7 @@
 
   // Initial calls
   updateHeaderState();
+  updateStickyCta();
   updateIndicators();
   checkAnimations();
 
