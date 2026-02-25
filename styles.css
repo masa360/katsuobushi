@@ -640,6 +640,17 @@ button { font-family: inherit; }
 .section-title.center { text-align: center; }
 .section-title.light { color: var(--white); }
 
+.section-tagline {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin: 0.25rem 0 0;
+}
+.section-tagline.center { text-align: center; }
+
 .title-line {
   width: 60px;
   height: 1px;

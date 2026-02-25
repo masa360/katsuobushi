@@ -133,7 +133,7 @@
   }
 
   function startSlider() {
-    slideInterval = setInterval(nextSlide, 5000);
+    slideInterval = setInterval(nextSlide, 2500);
   }
 
   function resetSlider() {
