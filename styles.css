@@ -451,26 +451,48 @@ button { font-family: inherit; }
   .hero-brand img { max-width: 260px; }
   .logo.logo-img img { height: 32px; }
 }
-.hero-tagline {
-  font-size: 0.85rem;
-  letter-spacing: 0.2em;
-  color: var(--beige);
-  margin: 0 0 1rem;
-}
 .hero-title {
   font-family: var(--font-serif);
   font-weight: 700;
-  font-size: clamp(2rem, 5vw, 3rem);
-  line-height: 1.4;
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  line-height: 1.2;
   color: var(--white);
   margin: 0 0 1.25rem;
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.02em;
 }
 .hero-subtitle {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.85);
-  margin: 0 0 2.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 1.5rem;
   font-weight: 400;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+.hero-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(4px);
+}
+@media (max-width: 600px) {
+  .hero-badges { gap: 0.4rem; }
+  .hero-badge { font-size: 0.75rem; padding: 0.3rem 0.75rem; }
 }
 
 /* Slider Navigation */
@@ -875,52 +897,11 @@ button { font-family: inherit; }
   color: var(--brown-dark);
   margin: 0 0 0.5rem;
 }
-.access-address {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  margin: 0 0 0.25rem;
-}
-.access-note {
-  font-size: 0.875rem;
-  color: var(--text-muted);
-  margin: 0;
-}
-.access-directions {
-  margin-bottom: 2rem;
-  text-align: left;
-}
-.access-lead {
-  font-weight: 600;
-  color: var(--brown-dark);
-  margin: 0 0 1.25rem;
-}
-.access-route {
-  margin-bottom: 1.5rem;
-}
-.access-route-title {
-  font-family: var(--font-serif);
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--brown-dark);
-  margin: 0 0 0.5rem;
-}
-.access-steps {
-  margin: 0 0 0.5rem;
-  padding-left: 1.25rem;
-  line-height: 1.8;
-}
-.access-tip {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin: 0;
-  font-style: italic;
-}
-.access-tip-block {
-  margin-top: 1rem;
-  padding: 0.75rem 1rem;
-  background: rgba(92, 74, 58, 0.06);
-  border-radius: 4px;
-  font-style: normal;
+.access-oneliner {
+  font-size: 1.05rem;
+  color: var(--brown);
+  margin: 0.5rem 0 0;
+  font-weight: 500;
 }
 .access-map-btn-wrap {
   margin-bottom: 2rem;
@@ -948,12 +929,6 @@ button { font-family: inherit; }
 .btn-map-icon {
   font-size: 1.25rem;
 }
-.access-map-note {
-  margin: 0.75rem 0 0;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
 .overview-wrap {
   margin-top: 2.5rem;
   padding-top: 2rem;
@@ -1227,9 +1202,9 @@ button { font-family: inherit; }
   transform: translateY(30px);
 }
 .hero .hero-brand.visible { transition-delay: 0.2s; }
-.hero .hero-tagline.visible { transition-delay: 0.4s; }
-.hero .hero-title.visible { transition-delay: 0.6s; }
-.hero .hero-subtitle.visible { transition-delay: 0.8s; }
+.hero .hero-title.visible { transition-delay: 0.4s; }
+.hero .hero-subtitle.visible { transition-delay: 0.6s; }
+.hero .hero-badges.visible { transition-delay: 0.8s; }
 .hero .btn-hero.visible { transition-delay: 1s; }
 
 /* Center utility */

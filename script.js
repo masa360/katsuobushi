@@ -104,11 +104,9 @@
   // ===== Loader =====
   const loader = document.getElementById('loader');
   window.addEventListener('load', function () {
-    document.body.classList.add('loading');
     setTimeout(function () {
       loader.classList.add('hidden');
       document.body.classList.remove('loading');
-      // Trigger hero animations after loader
       document.querySelectorAll('.hero .anim-item').forEach(function (el) {
         el.classList.add('visible');
       });
@@ -220,7 +218,7 @@
   }
 
   // ===== Section Indicators =====
-  const sectionIds = ['hero', 'concept', 'experience', 'flow', 'information', 'reserve'];
+  const sectionIds = ['hero', 'experience', 'flow', 'information', 'reserve'];
   const darkSections = ['reserve'];
 
   function updateIndicators() {
