@@ -763,6 +763,10 @@ button { font-family: inherit; }
 @media (max-width: 768px) {
   .two-col { grid-template-columns: 1fr; gap: 2.5rem; }
   .section { padding: 5rem 1.25rem; }
+  .hero { min-height: 0; }
+}
+@media (max-width: 480px) {
+  .section { padding: 5rem 1rem; }
 }
 
 /* ===== Image Block ===== */
